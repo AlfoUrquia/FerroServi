@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar_footer.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <script src="https://kit.fontawesome.com/1754d01cd1.js" crossorigin="anonymous"></script>
+    <script src="./js/hamburger.js" defer></script>
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">
+                <img src="./imgs/Inicio/logo.png" alt="Logo">
+                <h1>FERROSERVI TOTAL</h1>
+            </div>
+
+            <div class="navbar-links">
+                <ul>
+                    <a class="close-btn"><span class="fas fa-times-circle"></span></a>
+
+                    <li><a href="inicio.html">Inicio</a></li>
+
+                    <li><a href="#" class="products-btn">Productos<span class="fas fa-caret-down first"></span></a>
+                        <ul class="products-content">
+                            <li><a href="productos_fontaneria.html">Fontanería</a></li>
+                            <li><a href="productos_construccion.html">Construcción</a></li>
+                            <li><a href="productos_herramientas.html">Herramientas</a></li>
+                            <li><a href="productos_pinturas.html">Pinturas</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="services-btn">Servicios<span class="fas fa-caret-down first"></span></a>
+                        <ul class="services-content">
+                            <li><a href="servicios_fontaneria.html">Fontanería</a></li>
+                            <li><a href="servicios_carpinteria.html">Carpintería</a></li>
+                            <li><a href="servicios_fletes.html">Fletes</a></li>
+                            <li><a href="servicios_electricidad.html">Electricidad</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="suscripcion.html">Suscripción</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="shopping-cart">
+                <a class="fas fa-shopping-cart"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slideshow">
+            <input type="radio" id="1" name="image-slide" hidden/>
+            <input type="radio" id="2" name="image-slide" hidden/>
+            <input type="radio" id="3" name="image-slide" hidden/>
+    
+            <div class="slide">
+                <div class="item-slide">
+                    <picture>
+                        <source media="(max-width:420px)" srcset="./imgs/Inicio/slide1_movil.jpg">
+                        <img src="./imgs/Inicio/slide1.jpg" alt="Imagen del local" style="width: auto;">
+                    </picture>
+                </div>
+                <div class="item-slide">
+                    <picture>
+                        <source media="(max-width:420px)" srcset="./imgs/Inicio/slide2_movil.jpg">
+                        <img src="./imgs/Inicio/slide2.jpg" alt="Imagen del local" style="width:auto;">
+                    </picture>
+                </div>
+                <div class="item-slide">
+                    <picture>
+                        <source media="(max-width:420px)" srcset="./imgs/Inicio/slide3_movil.jpg">
+                        <img src="./imgs/Inicio/slide3.jpg" alt="Imagen del local" style="width:auto;">
+                    </picture>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <label class="pagination-item" for="1"></label>
+                <label class="pagination-item" for="2"></label>
+                <label class="pagination-item" for="3"></label>
+            </div>
+        </section>
+
+        <section class="cards">
+            <h2>Productos en Tendencia</h2>
+            <section class="card">
+                <img src="imgs/Inicio/tenden2.jpeg" alt="Bomba periferica 1/2 HP" />
+                <div class="content">
+                    <h3>Bomba Periferica 1/2 HP FOSET</h3>
+                    <div class="price">
+                        <p>Lps.899.00</p>
+                    </div>
+                    <p>Se utiliza cuando se requiere subir el agua a lugares altos (arriba de 15 m aproximadamente). Pueden ser usada con sistemas hidroneumáticos para incrementar la presión.</p>
+                    <form>
+                        <div class="cantidad">
+                            <label>Cantidad: </label>
+                            <input type="number" id="cantidad_1" name="cantidad_1" min="1" max="50">
+                        </div>
+                        <button type="submit" name="btnAgregar"><span class="fas fa-shopping-cart"></span>Agregar al carrito</button>
+                    </form>
+                </div>
+            </section>
+            <section class="card">
+                <img src="imgs/Inicio/tenden1.jpeg" alt="Lata de pintura CROMATIC" />
+                <div class="content">
+                    <h3>Pintura Preparada Corona Cromatic Latex GAL </h3>
+                    <div class="price">
+                        <p>Lps.519.00</p>
+                    </div>
+                    <p>Paredes exteriores e interiores, trabajos en madera y cielos. Ideal para paredes de tabla yeso, repello, mampostería y cernido.</p>
+                    <form>
+                        <div class="cantidad">
+                            <label>Cantidad: </label>
+                            <input type="number" id="cantidad_2" name="cantidad_2" min="1" max="50">
+                        </div>
+                        <button type="submit" name="btnAgregar"><span class="fas fa-shopping-cart"></span>Agregar al carrito</button>
+                    </form>
+                </div>
+            </section>
+            <section class="card">
+                <img src="imgs/Inicio/tenden6.jpeg" alt="Lata de barniz CORONA" />
+                <div class="content">
+                    <h3>Barniz Corona Ultra Wood GAL</h3>
+                    <div class="price">
+                        <p>Lps.575.00</p>
+                    </div>
+                    <p>Alto brillo y protección interior. Proporciona una apariencia natural a la superficie de madera sobre la que se aplica, dejando una capa brillante y protectora.</p>
+                    <form>
+                        <div class="cantidad">
+                            <label>Cantidad: </label>
+                            <input type="number" id="cantidad_3" name="cantidad_3" min="1" max="50">
+                        </div>
+                        <button type="submit" name="btnAgregar"><span class="fas fa-shopping-cart"></span>Agregar al carrito</button>
+                    </form>
+                </div>
+            </section>
+            <section class="card">
+                <img src="imgs/Inicio/tenden3.jpeg" alt="Inodoro blanco" />
+                <div class="content">
+                    <h3>Inodoro Ceramosa Blanco</h3>
+                    <div class="price">
+                        <p>Lps.1855.00</p>
+                    </div>
+                    <p>Alta tecnología que evita el regreso de gases.</p>
+                    <form>
+                        <div class="cantidad">
+                            <label>Cantidad: </label>
+                            <input type="number" id="cantidad_4" name="cantidad_4" min="1" max="50">
+                        </div>
+                        <button type="submit" name="btnAgregar"><span class="fas fa-shopping-cart"></span>Agregar al carrito</button>
+                    </form>
+                </div>
+            </section>
+            <section class="card">
+                <img src="imgs/Inicio/tenden4.jpeg" alt="Cierra electrica 1400W" />
+                <div class="content">
+                    <h3>Sierra Inglete 1400W INGCO</h3>
+                    <div class="price">
+                        <p>Lps.3,979.00</p>
+                    </div>
+                    <p>- Hoja de corte TCT</p>
+                    <p>- Paradas positivas a 9 ajustes Derecha/Izquierda</p>
+                    <p>- Cortes a inglete de 0-45 grados a la izquierda</p>
+                    <form>
+                        <div class="cantidad">
+                            <label>Cantidad: </label>
+                            <input type="number" id="cantidad_5" name="cantidad_5" min="1" max="50">
+                        </div>
+                        <button type="submit" name="btnAgregar"><span class="fas fa-shopping-cart"></span>Agregar al carrito</button>
+                    </form>
+                </div>
+            </section>
+            <section class="card">
+                <img src="imgs/Inicio/tenden5.jpeg" alt="Bota de trabajo cafe al tobillo" />
+                <div class="content">
+                    <h3>Bota de Trabajo Mete Facil Cafe Con Cubo - INGCO</h3>
+                    <div class="price">
+                        <p>Lps.1,275.00</p>
+                    </div>
+                    <p>Ponte las botas de seguridad Surtido de tallas: 39 Categoría de calzado de protección: SB: puntera de acero Parte superior de cuero dividido Suela de poliuretano de doble densidad Embalado por caja de color</p>
+                    <form>
+                        <div class="cantidad">
+                            <label>Cantidad: </label>
+                            <input type="number" id="cantidad_6" name="cantidad_6" min="1" max="50">
+                        </div>
+                        <button type="submit" name="btnAgregar"><span class="fas fa-shopping-cart"></span>Agregar al carrito</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <section class="footer-navbar">
+            <nav>
+                <ul>
+                    <div class="column">
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="productos_fontaneria.html">Productos</a></li>
+                        <li><a href="servicios_fontaneria.html">Servicios</a></li>
+                    </div>
+                    
+                    <div class="column">
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="suscripcion.html">Suscripción</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="rights">Todos los Derechos Reservados 2020 &copy;</section>
+
+        <section class="social">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="facebook">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="gmail">
+                            <span class="far fa-envelope"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="whatsapp">
+                            <span class="fab fa-whatsapp"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </footer> 
+</body>
+</html>
